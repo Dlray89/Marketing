@@ -1,0 +1,677 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+.headContStyling {
+  display: flex;
+  background: black;
+  align-items: center;
+  height: 25vh;
+  font-family: 'Gayathri', sans-serif;
+  width: 100%;
+}
+.buttonDesign {
+  background: #ffb20f;
+  width: 45%;
+  padding: 1.8%;
+  border: solid 1px #ffb20f;
+  border-radius: 5px;
+  text-align: center;
+  font-family: 'Gayathri', sans-serif;
+  color: black;
+  margin-top: 5%;
+}
+.videoStyling {
+  display: flex;
+  flex-direction: column;
+  border: solid 1px black;
+  border-radius: 10px;
+  background: radial-gradient(#333333, black);
+}
+.h3Styling {
+  padding: 5%;
+  text-align: center;
+  font-size: 1.2em;
+  font-family: 'Gayathri', sans-serif;
+}
+.aboutH3Styling {
+  width: 100%;
+  padding: 4%;
+  margin: 4%;
+  font-size: 20px;
+  background: radial-gradient(#333333, black);
+  border-radius: 10px;
+  box-sizing: border-box;
+}
+.navContainer {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+@media (max-width: 2000px) {
+  .navContainer {
+    display: flex;
+    background: black;
+    align-items: center;
+    height: 25vh;
+    font-family: 'Gayathri', sans-serif;
+    width: 100%;
+    justify-content: space-evenly;
+  }
+}
+@media (max-width: 1024px) {
+  .navContainer {
+    display: flex;
+    background: black;
+    align-items: center;
+    height: 25vh;
+    font-family: 'Gayathri', sans-serif;
+    width: 100%;
+    justify-content: space-evenly;
+    height: 20vh;
+  }
+}
+@media (max-width: 800px) {
+  .navContainer {
+    flex-direction: row;
+    align-items: center;
+    width: 100%;
+    justify-content: space-around;
+    height: 15vh;
+    box-sizing: border-box;
+  }
+}
+@media (max-width: 650px) {
+  .navContainer {
+    display: flex;
+    flex-direction: column;
+    height: 15vh;
+  }
+}
+.navContainer .navBar {
+  display: flex;
+  width: 10%;
+  justify-content: center;
+  align-items: center;
+}
+@media (max-width: 2000px) {
+  .navContainer .navBar {
+    width: 60%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+@media (max-width: 1024px) {
+  .navContainer .navBar {
+    width: 75%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2%;
+  }
+}
+@media (max-width: 800px) {
+  .navContainer .navBar {
+    display: flex;
+    flex-direction: row;
+    width: 75%;
+    justify-content: center;
+    justify-content: space-around;
+    box-sizing: border-box;
+    padding: 2%;
+  }
+}
+@media (max-width: 650px) {
+  .navContainer .navBar {
+    width: 100%;
+  }
+}
+.navContainer .navBar a {
+  color: white;
+  font-size: 1em;
+  font-family: 'Gayathri', sans-serif;
+  font-size: 20px;
+}
+.navContainer .h1Container {
+  width: 10%;
+  padding: 1%;
+  display: flex;
+  justify-content: flex-start;
+  margin-top: 1%;
+}
+@media (max-width: 650px) {
+  .navContainer .h1Container {
+    width: 100%;
+    padding: 5%;
+  }
+}
+@media (max-width: 800px) {
+  .navContainer .h1Container {
+    width: 20%;
+    padding: 2%;
+    box-sizing: border-box;
+  }
+}
+.navContainer .h1Container h1 {
+  color: white;
+  font-size: 3em;
+  display: flex;
+  width: 100%;
+}
+@media (max-width: 800px) {
+  .navContainer .h1Container h1 {
+    margin-right: 10%;
+  }
+}
+.navContainer .h1Container h1 span {
+  color: #bc0000;
+}
+.navContainer .icons {
+  width: 9%;
+  padding: 2%;
+}
+@media (max-width: 1024px) {
+  .navContainer .icons {
+    display: none;
+  }
+}
+.navContainer .icons i {
+  padding: 1%;
+}
+.header-img-text {
+  position: relative;
+  text-align: center;
+  color: white;
+}
+.header-img-text img {
+  width: 100%;
+  border: solid 2px black;
+}
+.header-img-text .textonpic {
+  background: rgba(27, 20, 17, 0.8);
+  padding: 3%;
+  border-radius: 5px;
+  color: white;
+  width: 40%;
+  position: absolute;
+  top: 73%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-family: 'Gayathri', sans-serif;
+}
+@media (max-width: 650px) {
+  .header-img-text .textonpic {
+    width: 80%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+  }
+}
+@media (max-width: 760px) {
+  .header-img-text .textonpic {
+    display: flex;
+    width: 80%;
+  }
+}
+.header-img-text .textonpic .btnContainer {
+  width: 97%;
+  padding: 2%;
+  justify-content: space-around;
+  display: flex;
+}
+@media (max-width: 650px) {
+  .header-img-text .textonpic .btnContainer {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+@media (max-width: 760px) {
+  .header-img-text .textonpic .btnContainer {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+  }
+}
+.header-img-text .textonpic .btnContainer button {
+  background: #ffb20f;
+  width: 45%;
+  padding: 1.8%;
+  border: solid 1px #ffb20f;
+  border-radius: 5px;
+  text-align: center;
+  font-family: 'Gayathri', sans-serif;
+  color: black;
+  margin-top: 5%;
+}
+@media (max-width: 650px) {
+  .header-img-text .textonpic .btnContainer button {
+    width: 100%;
+  }
+}
+@media (max-width: 760px) {
+  .header-img-text .textonpic .btnContainer button {
+    width: 100%;
+  }
+}
+.header-img-text .textonpic .btnContainer button a {
+  text-decoration: none;
+  color: black;
+  font-size: 1.2rem;
+}
+@media (max-width: 650px) {
+  .header-img-text .textonpic .btnContainer button a {
+    font-size: 1em;
+  }
+}
+.header-img-text .textonpic h2 {
+  font-size: 2em;
+  margin: 2%;
+}
+@media (max-width: 650px) {
+  .header-img-text .textonpic h2 {
+    font-size: 1.7em;
+  }
+}
+@media (max-width: 760px) {
+  .header-img-text .textonpic h2 {
+    font-size: 2.4em;
+  }
+}
+.header-img-text .textonpic p {
+  font-size: 1em;
+}
+@media (max-width: 650px) {
+  .header-img-text .textonpic p {
+    display: none;
+  }
+}
+@media (max-width: 760px) {
+  .header-img-text .textonpic p {
+    display: none;
+  }
+}
+.introContainer {
+  background: #bc0000;
+  color: white;
+  text-align: center;
+  padding: 5%;
+  font-size: 1.7em;
+  font-family: 'Gayathri', sans-serif;
+}
+.videoContainer {
+  padding: 5%;
+  background: #bc0000;
+  display: flex;
+  justify-content: space-around;
+  color: white;
+  font-size: 20px;
+}
+@media (max-width: 1024px) {
+  .videoContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 3%;
+  }
+}
+.videoContainer .One {
+  display: flex;
+  flex-direction: column;
+  border: solid 1px black;
+  border-radius: 10px;
+  background: radial-gradient(#333333, black);
+}
+@media (max-width: 1024px) {
+  .videoContainer .One {
+    width: 100%;
+    margin-bottom: 5%;
+  }
+}
+@media (max-width: 1024px) {
+  .videoContainer .One iframe {
+    width: 100%;
+  }
+}
+.videoContainer .One h3 {
+  padding: 5%;
+  text-align: center;
+  font-size: 1.2em;
+  font-family: 'Gayathri', sans-serif;
+}
+.videoContainer .Two {
+  display: flex;
+  flex-direction: column;
+  border: solid 1px black;
+  border-radius: 10px;
+  background: radial-gradient(#333333, black);
+}
+@media (max-width: 1024px) {
+  .videoContainer .Two iframe {
+    width: 100%;
+  }
+}
+.videoContainer .Two h3 {
+  padding: 5%;
+  text-align: center;
+  font-size: 1.2em;
+  font-family: 'Gayathri', sans-serif;
+}
+hr {
+  margin: 0% 10%;
+  color: white;
+}
+.newsLetter {
+  display: flex;
+  flex-direction: column;
+  background: radial-gradient(#333333, black);
+  width: 100%;
+  margin-left: 0%;
+}
+.newsLetter h3 {
+  padding: 2%;
+  text-align: center;
+  color: white;
+  font-family: 'Gayathri', sans-serif;
+  font-size: 2.3em;
+}
+.newsLetter .form {
+  margin-bottom: 3%;
+}
+.newsLetter .form .emailSignUpBox {
+  display: flex;
+  justify-content: center;
+}
+.newsLetter .form .emailSignUpBox .emailBox {
+  width: 35%;
+  margin-right: 5%;
+}
+.newsLetter .form .emailSignUpBox .emailBox input[type=email] {
+  width: 100%;
+  padding: 5%;
+  border: solid 1px white;
+  border-radius: 5px;
+  font-family: 'Gayathri', sans-serif;
+  font-size: 1em;
+}
+.newsLetter .form .emailSignUpBox .sumbitBox {
+  width: 20%;
+}
+.newsLetter .form .emailSignUpBox .sumbitBox input[type=submit] {
+  width: 100%;
+  padding: 8%;
+  border: solid 1px white;
+  border-radius: 5px;
+  color: white;
+  background: #121212;
+  font-family: 'Gayathri', sans-serif;
+  font-size: 1em;
+  text-align: center;
+}
+footer {
+  padding: 2%;
+  background: black;
+  color: white;
+  font-family: 'Gayathri', sans-serif;
+  font-size: 1em;
+  text-align: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+footer .footericons {
+  padding: 0%;
+}
+.aboutintroContainer {
+  background: #bc0000;
+  color: white;
+  text-align: center;
+  padding: 8%;
+  font-family: 'Gayathri', sans-serif;
+}
+.aboutintroContainer .introPar {
+  border: solid 2px #121212;
+  border-radius: 5px;
+  background: radial-gradient(#333333, black);
+  padding: 5%;
+  font-size: 1.7em;
+}
+.aboutintroContainer .aboutContainer {
+  padding: 4%;
+}
+.aboutintroContainer .aboutContainer .projectLeadBox {
+  display: flex;
+}
+.aboutintroContainer .aboutContainer .projectLeadBox img {
+  border-radius: 100%;
+}
+.aboutintroContainer .aboutContainer .projectLeadBox h3 {
+  width: 100%;
+  padding: 4%;
+  margin: 4%;
+  font-size: 20px;
+  background: radial-gradient(#333333, black);
+  border-radius: 10px;
+  box-sizing: border-box;
+}
+.aboutintroContainer .aboutContainer .projectLeadBox p {
+  padding: 4%;
+}
+.aboutintroContainer .aboutContainer .uxDesignBox {
+  display: flex;
+}
+.aboutintroContainer .aboutContainer .uxDesignBox img {
+  border-radius: 100%;
+}
+.aboutintroContainer .aboutContainer .uxDesignBox h3 {
+  width: 100%;
+  padding: 4%;
+  margin: 4%;
+  font-size: 20px;
+  background: radial-gradient(#333333, black);
+  border-radius: 10px;
+  box-sizing: border-box;
+}
+.aboutintroContainer .aboutContainer .uxDesignBox p {
+  padding: 4%;
+}
+.aboutintroContainer .aboutContainer .uiDeveloperBox {
+  display: flex;
+}
+.aboutintroContainer .aboutContainer .uiDeveloperBox img {
+  border-radius: 100%;
+}
+.aboutintroContainer .aboutContainer .uiDeveloperBox h3 {
+  width: 100%;
+  padding: 4%;
+  margin: 4%;
+  font-size: 20px;
+  background: radial-gradient(#333333, black);
+  border-radius: 10px;
+  box-sizing: border-box;
+}
+.aboutintroContainer .aboutContainer .uiDeveloperBox p {
+  padding: 4%;
+}
+.aboutintroContainer .aboutContainer .reactBox {
+  display: flex;
+}
+.aboutintroContainer .aboutContainer .reactBox img {
+  border-radius: 100%;
+}
+.aboutintroContainer .aboutContainer .reactBox h3 {
+  width: 100%;
+  padding: 4%;
+  margin: 4%;
+  font-size: 20px;
+  background: radial-gradient(#333333, black);
+  border-radius: 10px;
+  box-sizing: border-box;
+}
+.aboutintroContainer .aboutContainer .reactBox p {
+  padding: 4%;
+}
+.aboutintroContainer .aboutContainer .reactIIBox {
+  display: flex;
+}
+.aboutintroContainer .aboutContainer .reactIIBox img {
+  border-radius: 100%;
+}
+.aboutintroContainer .aboutContainer .reactIIBox h3 {
+  width: 100%;
+  padding: 4%;
+  margin: 4%;
+  font-size: 20px;
+  background: radial-gradient(#333333, black);
+  border-radius: 10px;
+  box-sizing: border-box;
+}
+.aboutintroContainer .aboutContainer .reactIIBox p {
+  padding: 4%;
+}
+.aboutintroContainer .aboutContainer .backendBox {
+  display: flex;
+}
+.aboutintroContainer .aboutContainer .backendBox img {
+  border-radius: 100%;
+}
+.aboutintroContainer .aboutContainer .backendBox h3 {
+  width: 100%;
+  padding: 4%;
+  margin: 4%;
+  font-size: 20px;
+  background: radial-gradient(#333333, black);
+  border-radius: 10px;
+  box-sizing: border-box;
+}
+.aboutintroContainer .aboutContainer .backendBox p {
+  padding: 4%;
+}

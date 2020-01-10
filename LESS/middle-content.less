@@ -1,0 +1,95 @@
+
+
+
+    .introContainer {
+        background : @hoverRed;
+        color      : white;
+        text-align : center;
+        padding    : 5%;
+        font-size  : 1.7em;
+        font-family: @FontGaya;
+
+    }
+
+    //closes introContainer
+
+
+    .videoContainer {
+        padding        : 5%;
+        background     : @hoverRed;
+        display        : flex;
+        justify-content: space-around;
+        color          : white;
+        font-size      : 20px;
+
+        
+    @media @MeddeskTop{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        padding: 3%;
+
+    }
+
+        .One {
+            .videoStyling();
+
+            @media @MeddeskTop{
+            width: 100%;
+            margin-bottom: 5%;
+        
+            }
+
+            iframe{
+
+                @media @MeddeskTop{
+                    width: 100%;
+            
+                }
+            }
+
+            h3 {
+                .h3Styling();
+
+            }
+
+            //closes h3
+        }
+
+        //closes one
+
+        .Two {
+            .videoStyling();
+
+            iframe{
+
+                @media @MeddeskTop{
+                    width: 100%;
+            
+                }
+            }
+
+
+            h3 {
+                .h3Styling();
+            }
+
+            
+
+            //closes h3
+        }
+
+        // closes two
+    }
+
+    //closes videoCotainer
+
+
+//closes body
+
+hr {
+    margin: 0% 10%;
+    color : white;
+}
+
+///////////
